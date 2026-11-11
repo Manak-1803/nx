@@ -1,0 +1,6 @@
+# Files
+.pre-commit-config.yaml
+
+# Directories
+.direnv
+/result
