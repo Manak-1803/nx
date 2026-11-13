@@ -4,6 +4,7 @@
 
     home-manager.users.cain = {
       rsnxmcst = {
+        attic-client.enable = true;
         atuin.enable = true;
         bash.enable = true;
         discord.enable = true;
