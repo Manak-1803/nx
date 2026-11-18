@@ -1,6 +1,11 @@
 { inputs, ... }: {
   flake.modules.nixos.cloudflare-warp =
-    { lib, config, ... }:
+    {
+      lib,
+      pkgs,
+      config,
+      ...
+    }:
     let
       cfg = config.rsnxmcst.cloudflare-warp;
     in
@@ -16,6 +21,7 @@
         };
 
         rsnxmcst.impermanence.directories = [ "/var/lib/cloudflare-warp" ];
+        environment.systemPackages = lib.optional config.rsnxmcst.gnome.enable pkgs.gnomeExtensions.cloudflare-warp-toggle;
       };
     };
 }
