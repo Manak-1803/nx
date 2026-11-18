@@ -51,6 +51,7 @@
             gnomeExtensions.blur-my-shell
             gnomeExtensions.just-perfection
             gnomeExtensions.clipboard-indicator
+            gnomeExtensions.hibernate-power-menu
             gnomeExtensions.alphabetical-app-grid
           ];
         };
