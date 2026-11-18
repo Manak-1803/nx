@@ -7,6 +7,10 @@
       newt.enable = true;
       postgresql.enable = true;
       sshd.enable = true;
+
+      minecraft-server = {
+        mechanicum = true;
+      };
     };
   };
 }

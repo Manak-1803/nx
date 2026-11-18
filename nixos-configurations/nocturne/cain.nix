@@ -7,6 +7,7 @@
         attic-client.enable = true;
         atuin.enable = true;
         bash.enable = true;
+        btop.enable = true;
         discord.enable = true;
         fonts.enable = true;
         gh.enable = true;
@@ -15,6 +16,7 @@
         prismlauncher.enable = true;
         secrets.enable = true;
         shell-tools.enable = true;
+        spotify.enable = true;
         ssh.enable = true;
         vscodium.enable = true;
         xdg-directories.enable = true;
