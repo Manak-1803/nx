@@ -30,6 +30,8 @@
 
         "https://cache.nixos-cuda.org" =
           "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M=";
+
+        "https://cache.rsnxmcst.dedyn.io/main" = "main:eZ8vO7Zjnm/DQLtFSGpQAAjqktA6TgHtR+EAcVl29CQ=";
       };
     };
 
