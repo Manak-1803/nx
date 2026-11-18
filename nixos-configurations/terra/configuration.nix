@@ -28,6 +28,8 @@
       nix.substituters = {
         "https://nix-community.cachix.org" =
           "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=";
+
+        "https://cache.rsnxmcst.dedyn.io/main" = "main:eZ8vO7Zjnm/DQLtFSGpQAAjqktA6TgHtR+EAcVl29CQ=";
       };
     };
 
