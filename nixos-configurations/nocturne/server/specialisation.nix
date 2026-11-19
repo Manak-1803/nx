@@ -27,6 +27,7 @@
             discord = disabled;
             fonts = disabled;
             prismlauncher = disabled;
+            rayburst = disabled;
             spotify = disabled;
             vscodium = disabled;
             zen-browser = disabled;

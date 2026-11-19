@@ -14,6 +14,7 @@
         git.enable = true;
         impermanence.enable = true;
         prismlauncher.enable = true;
+        rayburst.enable = true;
         secrets.enable = true;
         shell-tools.enable = true;
         spotify.enable = true;
