@@ -47,6 +47,7 @@
 
           systemPackages = with pkgs; [
             refine
+            wl-clipboard
             gnomeExtensions.caffeine
             gnomeExtensions.blur-my-shell
             gnomeExtensions.just-perfection
