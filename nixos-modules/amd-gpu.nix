@@ -1,6 +1,11 @@
 { inputs, ... }: {
   flake.modules.nixos.amd-gpu =
-    { lib, config, ... }:
+    {
+      lib,
+      pkgs,
+      config,
+      ...
+    }:
     let
       cfg = config.rsnxmcst.amd-gpu;
     in
@@ -27,6 +32,8 @@
           xserver.enable = true;
           xserver.videoDrivers = [ "amdgpu" ];
         };
+
+        environment.systemPackages = [ pkgs.rocmPackages.amdsmi ];
       };
     };
 }
