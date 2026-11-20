@@ -1,8 +1,32 @@
 { inputs, ... }: {
   flake.modules.homeManager.zen-browser =
-    { lib, config, ... }:
+    {
+      lib,
+      pkgs,
+      config,
+      ...
+    }:
     let
       cfg = config.rsnxmcst.zen-browser;
+
+      rayburstMessaging = pkgs.symlinkJoin {
+        name = "rayburst-native-messaging";
+        paths = [ pkgs.rayburst ];
+        postBuild = ''
+          mkdir -p $out/lib/mozilla/native-messaging-hosts
+          cat > $out/lib/mozilla/native-messaging-hosts/dev.aninsomniacy.rayburst.json <<EOF
+          {
+            "name": "dev.aninsomniacy.rayburst.browser",
+            "description": "Activate Rayburst",
+            "path": "${pkgs.rayburst}/bin/rayburst-browser-launcher",
+            "type": "stdio",
+            "allowed_extensions": [
+              "rayburst-connect@aninsomniacy.dev"
+            ]
+          }
+          EOF
+        '';
+      };
     in
     {
       imports = [ inputs.zen-browser.homeModules.beta ];
@@ -15,6 +39,8 @@
         programs.zen-browser = {
           enable = true;
           setAsDefaultBrowser = true;
+
+          nativeMessagingHosts = [ rayburstMessaging ];
 
           policies = {
             DisablePocket = true;
