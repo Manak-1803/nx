@@ -21,6 +21,14 @@
         };
 
         rsnxmcst.impermanence.directories = [ "/var/lib/cloudflare-warp" ];
+        home-manager.sharedModules = [
+          ({ config, ... }: {
+            rsnxmcst.impermanence.directories = [
+              "${config.xdg.dataHome}/warp"
+            ];
+          })
+        ];
+
         environment.systemPackages = lib.optional config.rsnxmcst.gnome.enable pkgs.gnomeExtensions.cloudflare-warp-toggle;
       };
     };
