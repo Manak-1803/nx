@@ -16,7 +16,10 @@
 
       config = lib.mkIf cfg.enable {
         home.packages = [ pkgs.rayburst ];
-        rsnxmcst.impermanence.directories = [ "${config.xdg.configHome}/dev.aninsomniacy.rayburst" ];
+        rsnxmcst.impermanence.directories = [
+          "${config.xdg.dataHome}/dev.aninsomniacy.rayburst"
+          "${config.xdg.configHome}/dev.aninsomniacy.rayburst"
+        ];
       };
     };
 }
