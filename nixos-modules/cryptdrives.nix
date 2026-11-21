@@ -100,7 +100,7 @@
                 "$active_disks" ${lib.escapeShellArg cfg.poolMount}
 
               ${pkgs.coreutils}/bin/chown root:wheel ${lib.escapeShellArg cfg.poolMount}
-              ${pkgs.coreutils}/bin/chmod 2775 ${lib.escapeShellArg cfg.poolMount}
+              ${pkgs.coreutils}/bin/chmod -R 2775 ${lib.escapeShellArg cfg.poolMount}
             '';
 
             ExecStop = pkgs.writeShellScript "unmount-mergerfs" ''
