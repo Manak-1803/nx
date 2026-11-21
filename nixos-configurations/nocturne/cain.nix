@@ -13,6 +13,7 @@
         gh.enable = true;
         git.enable = true;
         impermanence.enable = true;
+        mpv.enable = true;
         prismlauncher.enable = true;
         rayburst.enable = true;
         secrets.enable = true;
@@ -24,6 +25,7 @@
         zen-browser.enable = true;
 
         atuin.serverAddress = "http://10.18.238.151:8888";
+        mpv.enableNvidia = true;
       };
     };
   };

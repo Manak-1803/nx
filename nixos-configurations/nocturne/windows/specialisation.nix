@@ -6,6 +6,12 @@
       rsnxmcst = {
         jellyfin.enableNvidia = lib.mkForce false;
       };
+
+      home-manager.users.cain = {
+        rsnxmcst = {
+          mpv.enableNvidia = lib.mkForce false;
+        };
+      };
     };
   };
 }

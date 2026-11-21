@@ -26,6 +26,7 @@
           rsnxmcst = {
             discord = disabled;
             fonts = disabled;
+            mpv = disabled;
             prismlauncher = disabled;
             rayburst = disabled;
             spotify = disabled;
