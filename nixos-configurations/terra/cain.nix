@@ -21,6 +21,7 @@
         shell-tools.enable = true;
         spotify.enable = true;
         ssh.enable = true;
+        telegram.enable = true;
         vscodium.enable = true;
         xdg-directories.enable = true;
         zen-browser.enable = true;
