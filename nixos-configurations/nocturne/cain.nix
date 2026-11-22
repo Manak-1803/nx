@@ -10,6 +10,7 @@
         btop.enable = true;
         discord.enable = true;
         fonts.enable = true;
+        fragments.enable = true;
         gh.enable = true;
         git.enable = true;
         impermanence.enable = true;
