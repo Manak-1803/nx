@@ -3,7 +3,6 @@
     rsnxmcst = {
       bash.enable = true;
       cloudflare-warp.enable = true;
-      containers.enable = true;
       fwupd.enable = true;
       gnome.enable = true;
       home-manager.enable = true;
@@ -12,6 +11,7 @@
       libvirtd.enable = true;
       locale.enable = true;
       nh.enable = true;
+      nix-ld.enable = true;
       nix.enable = true;
       nixpkgs.enable = true;
       pangolin.enable = true;
