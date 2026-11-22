@@ -24,7 +24,7 @@
       jellyfin.enableNvidia = true;
 
       minecraft-server = {
-        mechanicum = true;
+        mechanicum = false;
       };
     };
   };
