@@ -35,6 +35,7 @@
 
         rsnxmcst.impermanence.files = [
           ".ssh/known_hosts"
+          ".ssh/authorized_keys"
           ".ssh/id_ed25519"
           ".ssh/id_ed25519.pub"
           ".ssh/id_ed25519_sk"
