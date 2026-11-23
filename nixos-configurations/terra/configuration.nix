@@ -15,6 +15,7 @@
       nix.enable = true;
       nixpkgs.enable = true;
       pangolin.enable = true;
+      peer-network.enable = true;
       podman.enable = true;
       secrets.enable = true;
       steam.enable = true;
@@ -30,6 +31,11 @@
           "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=";
 
         "https://cache.rsnxmcst.dedyn.io/main" = "main:eZ8vO7Zjnm/DQLtFSGpQAAjqktA6TgHtR+EAcVl29CQ=";
+      };
+
+      peer-network = {
+        iface = "eno1";
+        peerIP = "10.0.173.44/16";
       };
     };
 
