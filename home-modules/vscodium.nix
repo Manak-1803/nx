@@ -62,6 +62,7 @@
               pkief.material-icon-theme
               tamasfe.even-better-toml
               rust-lang.rust-analyzer
+              saoudrizwan.claude-dev
               usernamehw.errorlens
               ms-vscode.hexeditor
               vadimcn.vscode-lldb
@@ -137,6 +138,7 @@
         };
 
         rsnxmcst.impermanence.directories = [
+          ".cline"
           ".vscode-oss-shared"
           "${config.xdg.configHome}/VSCodium"
         ];
