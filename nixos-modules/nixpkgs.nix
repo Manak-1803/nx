@@ -12,7 +12,7 @@
       config = lib.mkIf cfg.enable {
         nixpkgs = {
           config.allowUnfree = true;
-          overlays = builtins.attrValues self.overlays;
+          overlays = [ inputs.lmstudio.overlays.default ] ++ (builtins.attrValues self.overlays);
         };
       };
     };
