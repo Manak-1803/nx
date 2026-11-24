@@ -14,6 +14,7 @@
         gh.enable = true;
         git.enable = true;
         impermanence.enable = true;
+        lmstudio.enable = true;
         mpv.enable = true;
         prismlauncher.enable = true;
         rayburst.enable = true;
