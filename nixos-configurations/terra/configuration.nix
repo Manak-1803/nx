@@ -39,6 +39,11 @@
       };
     };
 
+    networking.hosts = {
+      "10.0.173.44" = [ "terra.peer" ];
+      "10.0.122.246" = [ "nocturne.peer" ];
+    };
+
     nixpkgs.config.rocmSupport = true;
     networking.hostName = "terra";
     users.mutableUsers = false;
