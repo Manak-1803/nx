@@ -42,6 +42,11 @@
       };
     };
 
+    networking.hosts = {
+      "10.0.173.44" = [ "terra.peer" ];
+      "10.0.122.246" = [ "nocturne.peer" ];
+    };
+
     nixpkgs.config.cudaSupport = true;
     networking.hostName = "nocturne";
     users.mutableUsers = false;

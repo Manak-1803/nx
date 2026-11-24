@@ -5,6 +5,7 @@
       atuin-server.enable = true;
       cryptdrives.enable = true;
       dbgate.enable = true;
+      local-proxy.enable = true;
       jellyfin.enable = true;
       newt.enable = true;
       postgresql.enable = true;
@@ -19,6 +20,11 @@
             mountPoint = "/mnt/disks/d0";
           }
         ];
+      };
+
+      local-proxy.services = {
+        "dbgate.local" = "10.18.63.193:3000";
+        "jellyfin.local" = "10.18.197.89:8096";
       };
 
       jellyfin.enableNvidia = true;
